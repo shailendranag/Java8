@@ -12,7 +12,7 @@ public class Start {
         ll.add(new StudentPOJO(11,"kayan",99));
         ll.add(new StudentPOJO(45,"tiru",56));
 
-        Collections.sort(ll);
+        Collections.sort(ll,new AgeComparator());
 
         for(StudentPOJO st : ll)
             System.out.println(st.age +" "+ st.Name +" "+ st.rollno );
